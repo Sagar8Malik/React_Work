@@ -1,1 +1,1 @@
-This is my React App
+An e-commerce web application built with React, utilizing hooks and Redux for state management. This project showcases a functional e-commerce platform, complete with product listings, a shopping cart, payment methods, and more.
