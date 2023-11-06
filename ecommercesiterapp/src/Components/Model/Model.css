@@ -1,0 +1,63 @@
+.popup-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eaeaea;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-container .popup{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 40px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    gap: 15px;
+    user-select: none;
+}
+.popup-container .popup h2{
+    font-weight: 700;
+    font-size: 35px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.popup-container .popup p{
+    font-weight: 400;
+    font-size: 15px;
+    padding-right: 20px;
+}
+.popup-container .popup .btn-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    margin-top: 10px;
+}
+.popup-container .popup .btn-group button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+.popup-container .popup .btn-group .btn-confirm{
+    background-color: #1a1b31;
+    color: white;
+}
+.popup-container img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 45px;
+    right: 20px;
+    cursor: pointer;
+}

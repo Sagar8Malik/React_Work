@@ -1,0 +1,91 @@
+article {
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+article .btn-container1 {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+article .btn-container1 > button {
+  width: fit-content;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: orange;
+  border: 1px solid grey;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+article > p {
+  width: 100%;
+  font-weight: 700;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+article table {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+article table tbody,
+article table thead {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+article table tr {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article table tbody tr:last-child {
+  border-top: 2px solid grey;
+}
+article table tr th,
+article table tr td,
+article table tr:last-child td {
+  width: 25%;
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article table tr td {
+  width: 25%;
+  font-size: 25px;
+  font-weight: 400;
+}
+article table tr td img {
+  height: 60px;
+  width: 60px;
+}
+article table tr td .trash {
+  height: 30px;
+  width: 30px;
+}

@@ -1,0 +1,73 @@
+.confirmOrder-container{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    gap: 20px;
+}
+.confirmOrder-container .info-container{
+    border: 2px solid grey;
+    width: fit-content;
+    /* height: 100%; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 50%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.confirmOrder-container .info-container button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.confirmOrder-container .item-container{
+    max-width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 90%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.confirmOrder-container .item-container .item{
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.confirmOrder-container .item-container .item img{
+    width: 100%;
+    height: 70%;
+ }
+.confirmOrder-container .info-container > h2{
+    padding-left: 20px;
+}
+.confirmOrder-container .info-container .info-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirmOrder-container .info-container .info-element .title{
+    width: 200px;
+    text-align: start;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.confirmOrder-container .info-container .info-element p{
+    font-size: 18px;
+    font-weight: 400;
+}

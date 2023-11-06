@@ -1,0 +1,197 @@
+.ProductScreen-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.ProductScreen-container .ProductScreen-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+  background-color: #969393;
+}
+.ProductScreen-container .ProductScreen-header .heading {
+  text-decoration: none;
+  color: #fff;
+}
+.ProductScreen-container .ProductScreen-header .heading h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.ProductScreen-container .ProductScreen-header .cart-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+/* .ProductScreen-container .ProductScreen-header .search-box{
+  position: relative;
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 500px;
+} */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 500px; /* initial width */
+  height: 40px; /* fixed height */
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease-in-out;
+  position: relative;
+}
+.search-box input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: transparent;
+  margin-right: 10px;
+  outline: none;
+}
+.search-box i {
+  font-size: 20px;
+  color: #ccc;
+}
+.search-box:focus-within {
+  width: 600px;
+}
+.ProductScreen-container .ProductScreen-header .search-box input {
+  padding: 10px 20px;
+  padding-right: 50px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+}
+.ProductScreen-container
+  .ProductScreen-header
+  .search-box
+  input:placeholder-shown {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  columns: #fff;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+/* .search-box:focus-within {
+  width: 600px;
+} */
+.ProductScreen-container .ProductScreen-header .search-box img {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.ProductScreen-container .ProductScreen-header .cart-container span {
+  position: absolute;
+  right: -20px;
+  top: -15px;
+  background-color: #f2f2f2;
+  color: #333;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  /* height: 20px; */
+  font-size: 20px;
+  padding: 2px;
+  font-weight: 700;
+}
+.ProductScreen-container .ProductScreen-header .cart-container img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.ProductScreen-container .home-container {
+  width: 100%;
+  height: 89%;
+  display: flex;
+}
+.ProductScreen-container .home-container .category-menu {
+  width: 300px;
+  height: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.774);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProductScreen-container .home-container .ProductScreen-cardContainer {
+  /* border: 1px solid red; */
+  width: calc(100% - 300px);
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-height: 590px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.ProductScreen-container .home-container .category-menu {
+  background-color: #f2f2f2;
+}
+.ProductScreen-container .home-container .category-menu h2 {
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+  width: 100%;
+  text-align: center;
+}
+.ProductScreen-container .home-container .category-menu > div {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+.ProductScreen-container .home-container .category-menu > div label {
+  cursor: pointer;
+}
+.ProductScreen-container .home-container .category-menu > div .check {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  border-radius: 50%;
+  accent-color: #fff;
+  border: none;
+}
+.ProductScreen-container .home-container .category-menu > div .check > img {
+  width: 100%;
+  height: 100%;
+}
