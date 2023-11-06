@@ -1,0 +1,207 @@
+.todoList-container{
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    font-size: 20px;
+    background-color: #eff1f2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    word-spacing: 5px;
+    letter-spacing: 0;
+    gap: 10px;
+    position: relative;
+}
+.todoList-container .todoList-editForm-container{
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todoList-container .todoList-editForm{
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    padding: 30px;
+    padding-top: 50px;
+    display: flex;align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.todoList-container .todoList-editForm p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.todoList-container .todoList-editForm input{
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.todoList-container .todoList-editForm button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3b71ca;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.todoList-container .todoList-editForm #close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+.todoList-container .title{
+    font-weight: 700;
+    text-decoration: underline;
+    color: #3b71ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+.todoList-container .title img{
+    width: 60px;
+    aspect-ratio: 1;
+}
+.todoList-container .todoList-addtodo{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px 0 0;   
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.todoList-container .todoList-addtodo img{
+    width: 30px;
+    height: 30px;
+}
+.todoList-container .todoList-addtodo input{
+    width: 100%;
+    border: none;
+    padding: 30px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.todoList-container .todoList-addtodo button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #3b71ca;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+.todoList-container .line{
+    border: 1px solid #cccece;
+    width: 100%;
+    margin: 10px 0;
+}
+.todoList-container .todolist-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    /* gap: 20px; */
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.todoList-container .todolist-list .todolist-element{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+    min-height: 60px;
+    border-bottom: 1px solid #cccece;
+    padding: 30px 0;
+}
+.todoList-container .todolist-list .todolist-element:last-child{
+    border: none;
+}
+.todoList-container .todolist-list .todolist-element input{
+    margin: 0 10px;
+    height: 20px;
+    aspect-ratio: 1;
+}
+.todoList-container .todolist-list .todolist-element p{
+    margin-left: 5px;
+    /* border: 1px solid red; */
+    max-width: 70%;
+}
+.todoList-container .todolist-list .todolist-element > div{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    word-spacing: 0;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.todoList-container .todolist-list .todolist-element > img,
+.todoList-container .todolist-list .todolist-element .checked{
+    width: 25px;
+    height: 25px;
+}
+.todoList-container .todolist-list .todolist-element .checked{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.todoList-container .todolist-list .todolist-element > div .edit,
+.todoList-container .todolist-list .todolist-element > div .info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    user-select: none;
+}
+.todoList-container .todolist-list .todolist-element > div .info p{
+    width: fit-content;
+    padding: 0 5px;
+    min-width: 90px;
+}
+.todoList-container .todolist-list .todolist-element > div .info img{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.todoList-container .todolist-list .todolist-element > div .edit img:nth-child(1){
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.todoList-container .todolist-list .todolist-element > div .edit img:nth-child(2){
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+.todoList-container .todolist-list .todolist-element > div .edit{
+    margin-right: 20px;
+    gap: 10px;
+}
