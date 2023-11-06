@@ -1,0 +1,403 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(2, 8, 8);
+}
+
+.nav_container {
+  padding-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar * {
+  color: rgb(8, 1, 1) !important;
+}
+
+.nav_list > div {
+  display: flex;
+}
+
+.nav_list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navbar {
+  background: linear-gradient(
+    to right,
+    rgba(212, 127, 201, 0.884),
+    rgb(151, 199, 201)
+  );
+}
+
+.accounts h6 {
+  width: 100%;
+  text-align: start;
+}
+
+.accounts li {
+  width: 200px;
+  text-align: start;
+}
+
+.category h6 {
+  width: 100%;
+  text-align: start;
+}
+
+.category li {
+  width: 200px;
+  text-align: start;
+}
+.set-budget-button__btn-container {
+  margin-bottom: 20px;
+}
+.main_container {
+  padding: 20px;
+  padding-left: 320px;
+}
+
+.diamond {
+  background: pink;
+  font-size: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  width: calc(20% - 5px) !important;
+  height: 50px !important;
+  margin-left: 5px;
+}
+
+.expenses {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid gray;
+  border-radius: 18px;
+  padding: 4px 15px;
+  width: 150px;
+}
+
+.income-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  gap: 86px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.daily {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.companies {
+  width: 100%;
+  height: 45vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.title-div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.titles {
+  display: grid;
+}
+
+.opa-50 {
+  opacity: 50%;
+}
+
+.plus-icon {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: blue;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-side {
+  gap: 30px;
+}
+
+.nav-link i {
+  font-size: 30px;
+}
+
+.nav-link {
+  padding-block: 0 !important;
+}
+
+.container {
+  margin-right: unset !important;
+}
+
+.accounts a {
+  text-decoration: none !important;
+  font-weight: 500;
+  color: rgba(31, 100, 226, 0.87);
+  list-style-type: none;
+}
+
+.category a {
+  text-decoration: none !important;
+  font-weight: 500;
+  color: rgba(31, 100, 226, 0.87);
+  list-style-type: none;
+}
+
+.accounts {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+.category {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+.add-icon {
+  color: blue; /* Set the color to blue */
+  font-weight: bold; /* Optional: Make the "+" sign bold */
+  margin-right: 4px; /* Optional: Add some spacing to the right of the "+" sign */
+}
+
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #282c34;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.sidebar_component_heading {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.user-image {
+  width: 100px;
+}
+
+.user-profile {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+}
+
+.sidebar_component_heading span {
+  color: rgba(31, 100, 226, 0.87);
+}
+
+.sidebar_component {
+  display: flex;
+  flex-direction: column !important;
+  padding: 20px !important;
+  width: 270px;
+  z-index: 12 !important;
+}
+
+.sidebar_navbar {
+  top: 30px;
+  left: 20px;
+  position: absolute;
+  z-index: 12 !important;
+  background-color: white;
+  width: 270px;
+  /* height: 570px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 25px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.list-group-item span {
+  color: black !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Additional CSS for Budget Visualization */
+.budget-visualization {
+  text-align: center;
+  padding: 20px;
+}
+
+.budget-visualization h3 {
+  margin-bottom: 20px;
+}
+
+/* Ensure the chart container is centered */
+#budgetChart {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 100px; */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background overlay */
+  z-index: 2000; /* Ensure the modal is on top of other elements */
+}
+
+/* Add these styles to your App.css file */
+
+/* Add these styles to your CSS file */
+.secard-container::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scheduled-expenses {
+  text-align: center;
+}
+.scheduled-expenses h4 {
+  text-align: left;
+}
+.secard-container {
+  display: flex;
+  /* background-color: black; */
+  flex-wrap: nowrap;
+  flex-direction: row; /* Display cards in a row */
+  overflow-x: auto;
+  /* Add horizontal scroll if needed */
+}
+.set-budget-button__button {
+  width: 80%;
+}
+.card {
+  flex: 0 0 90px; /* Adjust the card width as needed */
+  margin: 5px; /* Add spacing between cards */
+  text-align: center;
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo {
+  width: 25px; /* Adjust the logo size as needed */
+  height: 25px;
+  object-fit: contain;
+  margin-left: o auto 10px;
+  /* margin: 0 auto 10px; */
+  padding-top: 5px; /* Center the logo horizontally and add margin below */
+}
+
+.title {
+  font-size: 14px;
+  color: white;
+  /* margin-left:o auto 10px; */
+}
+/* Add these CSS rules to reduce the size of the Doughnut chart */
+#myDoughnutChart {
+  /* Adjust the width and height as needed */
+  width: 130px !important;
+  height: 130px !important;
+}
+
+.doughnutabovetext h6 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.barcharts h6 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.set-budget-button {
+  border-radius: 10px;
+}
+
+.name .user-name {
+  color: rgba(13, 93, 240, 0.96);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

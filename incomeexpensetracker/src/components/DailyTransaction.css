@@ -1,0 +1,120 @@
+/* CSS for Daily Transaction component */
+
+.daily-transaction {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container-card {
+  display: flex;
+  gap: 20px;
+}
+
+h4 {
+  margin: 0;
+}
+
+/* Date Slider */
+input[type="date"] {
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  /* border:1px solid red; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap; /* Use "nowrap" to prevent wrapping */
+  margin: 0 -10px; /* Add negative margin to counter padding on cards */
+}
+
+/* Income and Spending Cards */
+.income-card,
+.spending-card {
+  width: auto; /* Equal width for both cards, considering margin */
+  margin: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.income-card h5,
+.spending-card h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.income-card .card-text,
+.spending-card .card-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/* .searchField {
+  width: 550px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  height:40px;
+} */
+
+.search-box img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  height: 20px;
+  width: 20px;
+}
+.search-box input {
+  margin: 0 !important;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Style for the search input field */
+.searchField {
+  width: 550px;
+  height: 40px;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  position: relative;
+  /* background: url("../../public/images/searchicon.png") no-repeat scroll right
+    center transparent; */
+  background-size: 20px; /* Adjust the size of the search icon */
+
+  background-color: aliceblue;
+}
+
+.companies__bold {
+  font-weight: bolder;
+}
+
+.month-selector {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
