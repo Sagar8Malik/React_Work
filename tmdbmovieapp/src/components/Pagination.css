@@ -1,0 +1,46 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.prev-button,
+.next-button {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgb(2, 2, 128);
+}
+
+.prev-button[disabled],
+.next-button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.total-pages {
+  margin: 0 10px;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+input[type="number"]::placeholder {
+  color: #777;
+}
