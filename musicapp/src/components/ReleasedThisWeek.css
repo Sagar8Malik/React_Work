@@ -1,0 +1,38 @@
+.section {
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+}
+
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.song-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.song-item:hover {
+  transform: translateY(-5px);
+}
+
+.song-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.song-item span {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.playing {
+  background-color: #f3f3f3; /* Change the background color to indicate playing */
+}
